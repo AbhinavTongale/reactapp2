@@ -3,34 +3,37 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from "./Card";
 import "./index.css";
+import Sdata from "./Sdata";
+
+// console.log(Sdata[0].sname);
 
 ReactDOM.render( 
 <>
+  <h1 className="heading_style" > List of Top Youtube Movies </h1>
   <Card 
-    imgsrc = "images.jpg"
-    title = " Youtube movies"
-    sname = "Dhamaka"
-    link = "https://youtube.com/watch?v=qRESnWFYYho&feature=shares"
+    imgsrc ={Sdata[0].imgsrc}
+    title = {Sdata[0].title}
+    sname = {Sdata[0].sname}
+    link = {Sdata[0].link}
   /> 
   <Card 
-    imgsrc = "Thackeray.jpg"
-    title = " Youtube movies"
-    sname = "Thackery"
-    link = "https://youtube.com/watch?v=Qqpl_sAcQF8&feature=shares"
-  />
+    imgsrc ={Sdata[1].imgsrc}
+    title = {Sdata[1].title}
+    sname = {Sdata[1].sname}
+    link = {Sdata[1].link}
+  /> 
   <Card 
-    imgsrc = "Godse.jpg"
-    title = " Youtube movies"
-    sname = "Godse"
-    link = "https://youtube.com/watch?v=d0coKw8nheQ&feature=shares"
-
-  />
+    imgsrc ={Sdata[2].imgsrc}
+    title = {Sdata[2].title}
+    sname = {Sdata[2].sname}
+    link = {Sdata[2].link}
+  /> 
   <Card 
-    imgsrc = "sher.jpg"
-    title = " Youtube movies"
-    sname = "SherShivray"
-    link = "https://www.youtube.com/watch?v=MJUxhDj9fjw"
-
-  />
+    imgsrc ={Sdata[3].imgsrc}
+    title = {Sdata[3].title}
+    sname = {Sdata[3].sname}
+    link = {Sdata[3].link}
+  /> 
+  
 </>, 
 document.getElementById("root"));
