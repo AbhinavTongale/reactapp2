@@ -1,31 +1,36 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
+import Card from "./Card";
+import "./index.css";
 
-let curDate = new Date(2022,12,20,10);
-curDate = curDate.getHours();
-let greeting = '';
+ReactDOM.render( 
+<>
+  <Card 
+    imgsrc = "images.jpg"
+    title = " Youtube movies"
+    sname = "Dhamaka"
+    link = "https://youtube.com/watch?v=qRESnWFYYho&feature=shares"
+  /> 
+  <Card 
+    imgsrc = "Thackeray.jpg"
+    title = " Youtube movies"
+    sname = "Thackery"
+    link = "https://youtube.com/watch?v=Qqpl_sAcQF8&feature=shares"
+  />
+  <Card 
+    imgsrc = "Godse.jpg"
+    title = " Youtube movies"
+    sname = "Godse"
+    link = "https://youtube.com/watch?v=d0coKw8nheQ&feature=shares"
 
-const cssStyle = { };
+  />
+  <Card 
+    imgsrc = "sher.jpg"
+    title = " Youtube movies"
+    sname = "SherShivray"
+    link = "https://www.youtube.com/watch?v=MJUxhDj9fjw"
 
-if(curDate >= 1 && curDate < 12){
-  greeting = 'Good Morning !';
-  cssStyle.color = 'black';
-
-} else if(curDate >= 12 && curDate < 20){
-  greeting = 'Good Afternoon !';
-  cssStyle.color = 'red';
-
-}else{
-  greeting = 'Good Night !';
-  cssStyle.color = 'black';
-}
-
-ReactDOM.render(
-  <>
-    <div>
-      <h1> Hello Sir, <span style= {cssStyle}> { greeting } </span></h1>
-    </div>
-  </>,
-    document.getElementById("root")
-);
+  />
+</>, 
+document.getElementById("root"));
